@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radio Star | Favorites</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="favorites">
+  <div class="page-shell">
+    <div data-include="header"></div>
+    <main class="inner-main">
+      <section class="station-section">
+        <div class="section-heading">
+          <h2>Favorite Stations</h2>
+        </div>
+        <div id="favorites-list" class="radio-grid">
+          <p class="loading-state">Loading favorite stations...</p>
+        </div>
+      </section>
+    </main>
+    <div data-include="footer"></div>
+  </div>
+  <script src="shared.js"></script>
+  <script src="favorites-storage.js"></script>
+  <script src="favorites.js"></script>
+</body>
+</html>
