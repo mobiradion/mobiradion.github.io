@@ -6,6 +6,12 @@
         "image":  "images/atr.jpg"
     },
     {
+        "title":  "CIR",
+        "streamUrl":  "http://220.247.234.207:8000/cirstream",
+        "description":  "Colombo International  Radio Live ",
+        "image":  "images/Colombo-International-Radio.jpg"
+    },
+    {
         "title":  "Inbathamil oli",
         "streamUrl":  "https://usa7.fastcast4u.com/proxy/ozmediae?mp=/1",
         "description":  "Inbathamil oli fm is 24 Hours Pioneer Australia Tamil Radio இன்பத்தமிழ் ஒலி – வானலைகளின் வல்லரசன்.Inbathamil oli Tamil Radio from Sydney",
