@@ -1,16 +1,94 @@
 ﻿window.TAMIL_RADIOS = [
     {
-        "title":  "Bakthi Layam FM",
-        "streamUrl":  "https://stream.zeno.fm/fbetbdb8t18uv",
-        "description":  "Listen to Bhakthi Layam fm for the best Religious radio. Listen live",
-        "image":  "images/bhakthilayamfm.jpg"
+        "title":  "American Tamil Radio",
+        "streamUrl":  "https://cp11.serverse.com/proxy/hgsmgluv?mp=/stream",
+        "description":  "“அமெரிக்கத் தமிழ் ஊடகத்தின்” ஒரு அங்கமான அமெரிக்கத் தமிழ் வானொலி",
+        "image":  "images/atr.jpg"
     },
     {
-        "title":  "Isaimurasu FM",
-        "streamUrl":  "https://usa8.fastcast4u.com/proxy/isaimurasufm?mp=/1",
-        "description":  "Isaimurasu FM is a Tamil FM FM radio will function in the name of Isaimurasu Nahoor Haniffa",
-        "image":  "images/isaimurasufm.jpg"
+        "title":  "Inbathamil oli",
+        "streamUrl":  "https://usa7.fastcast4u.com/proxy/ozmediae?mp=/1",
+        "description":  "Inbathamil oli fm is 24 Hours Pioneer Australia Tamil Radio இன்பத்தமிழ் ஒலி – வானலைகளின் வல்லரசன்.Inbathamil oli Tamil Radio from Sydney",
+        "image":  "images/inbathamiloli.jpg"
+    },    
+    {
+        "title":  "TRT Tamil Oli",
+        "streamUrl":  "https://radio13.pro-fhi.net:19236/stream.mp3",
+        "description":  "TRT Tamil Oli Radio France Brings all Tamilian across globe together. ‘Welcome to ரி-ஆர்-ரி’ (TRT) தமிழ்ஒலி வானொலி",
+        "image":  "images/TRTTamilOli_2.jpg"
+    },    
+    {
+        "title":  "IBC Tamil Radio",
+        "streamUrl":  "https://rbx2.hnux.com/http://10454.cloudrad.io:6176/stream.mp3",
+        "description":  "IBC Tamil Radio is a Tamil language radio station with aim of building bridges of communion among Tamils all over the world.IBC Tamil Radio provide a trusted and indispensable source of information",
+        "image":  "images/ibctamil.jpg"
+    },    
+    {
+        "title":  "Old Hits",
+        "streamUrl":  "https://a9oldhits-a9media.radioca.st/stream",
+        "description":  "Old Hits Tamil radio is part of A9 media.It plays the Tamil movie songs from old movies.Listen to Tamil super hits classical songs.Listen to Tamil Old Hits only on Old Hits radio station online.\"",
+        "image":  "images/a9logos.jpg"
+    },   
+    {
+        "title":  "Erode City FM",
+        "streamUrl":  "https://stream.zeno.fm/9fp1383f0d0uv",
+        "description":  "Erode City FM is a Tamil online radio station broadcasting from Erode. It plays All Time Good Tamil Songs 24/7 live online.Tune to the best of Tamil music radio.Listen to Erode City FM Tamil radio station online.\"",
+        "image":  "images/erode.jpg"
     },
+    {
+        "title":  "Sun Tamil Radio",
+        "streamUrl":  "https://stream.zenolive.com/yavek61461zuv.aac",
+        "description":  "Sun Tamil Radio is a Tamil radio station broadcasting from Sri Lnaka.Listen to layest kollywood Tamil super hits songs live streaming online \"",
+        "image":  "images/suntamilradio.jpg"
+    },
+    {
+        "title":  "Tamil Amuthu Chennai Radio",
+        "streamUrl":  "https://stream.zeno.fm/k9e5pmbktp8uv",
+        "description":  "Tamil Amuthu Chennai Radio covers various kinds of hits and all set to engage you with this exciting and engaging radio station that is available to enjoy for everyone around the world and the radio is also online 24/7. So, if you like Tamil Amuthu Chennai radio hit the play button and enjoy the music of your choice with the radio.Listen to Tamil Amuthu Chennai Radio station online.,இணையத்தில் முதலிடம்…. உங்கள் இதயத்திலும் முதலிடம்…. இது உங்கள் தமிழ் அமுது சென்னை வானொலி… இசையால் உலக தமிழர்களை ஈர்த்து கொண்டிருப்பது உங்கள் தமிழ் அமுது சென்னை வானொலி…. தொடர்ந்தும் இணையத்தின் ஊடாக.",
+        "image":  "images/Tamil-Amuthu-Chennai-Radio.jpg"
+    },
+    {
+        "title":  "SLBC Tamil National Service",
+        "streamUrl":  "https://stream.zeno.fm/xekhrn4zetzuv",
+        "description":  "SLBC Tamil National Service is the Tamil service of Sri Lanka Broadcasting Corporation in Sri Lanka. SLBC Tamil National Service radio plays Tamil news , Tamil songs and music.Listen to SLBC tamil radio station online. இலங்கை வானொலி இலங்கையின் முன்னணி ஒலிபரப்பு நிலையமும் ஆசியாவின் முதல் வானொலி நிலையமுமாகும். இலங்கை ஒலிபரப்புக் கூட்டுத்தாபனம்",
+        "image":  "images/slbctamil.jpg"
+    },
+    {
+        "title":  "Roobam FM",
+        "streamUrl":  "https://s3.radio.co/sadfae7495/listen",
+        "description":  "Roobam FM is Toronto Digital Tamil radio from Canada.Roobam FM plays super hit Tamil songs and local news from Canada , sri Lanka and India.Listen to Roobam FM Tamil digital online radio station from Canada.",
+        "image":  "images/roobamfm.jpg"
+    },
+    {
+        "title":  "Asal FM",
+        "streamUrl":  "https://stream.zeno.fm/pzgws1kc41zuv",
+        "description":  "Asal FM radio plays Tamil and South Indian cinema music.Listen to Asal FM radio online.Asal FM radio plays super hit Tamil songs from alla eras. இசை பிரியர்களே!! தங்களுடைய இசைப்பயணம் இனிமையாக தொடர அசல் இசை.",
+        "image":  "images/asalfm.jpg"
+    },
+    {
+        "title":  "Nellai Tamil FM",
+        "streamUrl":  "https://stream.zeno.fm/5nu139840tzuv",
+        "description":  "Nellai Tamil FM is a Tamil online radio station broadcasting from Tirunelveli .Nellai Fm plays tamil classic songs and melody songs online.Listen to Nellai Tamil FM radio station online. நெல்லை தமிழ் வானொலி உங்களுக்காக இனிமையான பாடல்களை தொகுத்து வழங்க இருக்கிறோம். சிறந்த ஒலி அமைப்புடன் உங்களுடன் இனைகிறோம்.",
+        "image":  "images/nellai-tamil-fm.jpg"
+    },
+    {
+        "title":  "Chellam FM",
+        "streamUrl":  "https://sugu.radioca.st/stream/stream/1",
+        "description":  "Chellam FM listen non-stop super hits Tamil songs 27/7.Chellam FM playlist contains a huge selection of Tamil super hits songs from the 80’s and 90’s.Chellam FM is also available on HQ.Listen to Chellam FM live streaming online.",
+        "image":  "images/chellamfm.jpg"
+    },
+    {
+        "title":  "Anbu FM",
+        "streamUrl":  "https://stream.zeno.fm/c2p4f1np4bruv",
+        "description":  "Anbu FM is Tamil online radio station broadcasting from Tiruppur.Anbu FM plays non stop Tamil super hit songs from Tamil movies.Listen to Anbu FM Tamil station online. உலக தமிழர்களின் உள்ளங்களிளும் இல்லங்களிளும் அன்பா ஒலிக்கும்…",
+        "image":  "images/anbufm.jpg"
+    },
+    {
+        "title":  "Lankasri FM",
+        "streamUrl":  "https://rbx2.hnux.com/http://5984.cloudrad.io:8032/stream.mp3",
+        "description":  "Lankasri FM is your favorite Tamil FM Online from UK, Lankasri FM Radio Live Entertain people all over the world with Creative Tamil Programs and Tamil songs and music.Listen to Lankasri FM tamil radio online",
+        "image":  "images/lankasrifm.jpg"
+    },    
     {
         "title":  "Vasantham FM",
         "streamUrl":  "https://cp12.serverse.com/proxy/vasanthamfm?mp=/stream",
@@ -76,30 +154,18 @@
         "streamUrl":  "https://nanbanfm-unicast2u.radioca.st/stream",
         "description":  "Nanban FM Tamil Online Radio From Dharmapuji",
         "image":  "images/nanbanfm.jpg"
-    },
+    }, 
     {
-        "title":  "TRT Tamil Oli",
-        "streamUrl":  "https://radio13.pro-fhi.net:19236/stream.mp3",
-        "description":  "TRT Tamil Oli Radio France Brings all Tamilian across globe together. ‘Welcome to ரி-ஆர்-ரி’ (TRT) தமிழ்ஒலி வானொலி",
-        "image":  "images/TRTTamilOli_2.jpg"
+        "title":  "Big FM Tamil",
+        "streamUrl":  "https://stream.zeno.fm/r2gn1pgm4qruv",
+        "description":  "Big FM 92.7 Chennai is a Tamil radio station broadcasting from Chennai.Big FM Tamil plays top 100 Kalakal Hits and non stop Tamil super hits songs online.Listen to Youth centered super hit Fm radio station from Chennai online.\"",
+        "image":  "images/bigfm.jpg"
     },
     {
         "title":  "Ilaiyaraja Radio",
         "streamUrl":  "https://stream.zeno.fm/uayzbqr53d0uv",
         "description":  "Ilaiyaraja Radio Tamil Music radio station online.Ilaiyaraja Radio plays non stop super hits Tamil songs composed by Isaignani Ilaiyaraja.Ilaiyaraja Radio plays 24/7 the best collection of super hit Tamil songs.\"",
         "image":  "images/ilayaraja.jpg"
-    },
-    {
-        "title":  "Inbathamil oli",
-        "streamUrl":  "https://usa7.fastcast4u.com/proxy/ozmediae?mp=/1",
-        "description":  "Inbathamil oli fm is 24 Hours Pioneer Australia Tamil Radio இன்பத்தமிழ் ஒலி – வானலைகளின் வல்லரசன்.Inbathamil oli Tamil Radio from Sydney",
-        "image":  "images/inbathamiloli.jpg"
-    },
-    {
-        "title":  "Big FM Tamil",
-        "streamUrl":  "https://stream.zeno.fm/r2gn1pgm4qruv",
-        "description":  "Big FM 92.7 Chennai is a Tamil radio station broadcasting from Chennai.Big FM Tamil plays top 100 Kalakal Hits and non stop Tamil super hits songs online.Listen to Youth centered super hit Fm radio station from Chennai online.\"",
-        "image":  "images/bigfm.jpg"
     },
     {
         "title":  "Instrumental Music Radio",
@@ -112,6 +178,12 @@
         "streamUrl":  "https://stream.zenolive.com/b741tfumhm8uv",
         "description":  "Dharisanam FM is a tamil devotional radio playing Bakthi tamil songs from movies and other artists.Dharisanam FM plays all Tamil devotional songs online 24/7 live online.Listen to Dharisanam FM live online.\"",
         "image":  "images/Dharisanam-FM.jpg"
+    },
+    {
+        "title":  "Isaimurasu FM",
+        "streamUrl":  "https://usa8.fastcast4u.com/proxy/isaimurasufm?mp=/1",
+        "description":  "Isaimurasu FM is a Tamil FM FM radio will function in the name of Isaimurasu Nahoor Haniffa",
+        "image":  "images/isaimurasufm.jpg"
     },
     {
         "title":  "Vagai Tamil FM",
@@ -136,13 +208,7 @@
         "streamUrl":  "https://ec4.yesstreaming.net:1990/stream",
         "description":  "Thaalam FM 88.9 HD3 Tamil Radio Station operating from Toronto",
         "image":  "images/thaalamfm.jpg"
-    },
-    {
-        "title":  "IBC Tamil Radio",
-        "streamUrl":  "https://rbx2.hnux.com/http://10454.cloudrad.io:6176/stream.mp3",
-        "description":  "IBC Tamil Radio is a Tamil language radio station with aim of building bridges of communion among Tamils all over the world.IBC Tamil Radio provide a trusted and indispensable source of information",
-        "image":  "images/ibctamil.jpg"
-    },
+    },    
     {
         "title":  "Tamil Panpalai Gold",
         "streamUrl":  "https://tamilpanpalai.radioca.st/ind",
@@ -154,13 +220,7 @@
         "streamUrl":  "https://stream.zeno.fm/bpc3ucypmm0uv",
         "description":  "Tamil Amuthu Bakthi Radio is a Tamil devotioal radio station.Tamil Amuthu Bakthi Radio plays non stop Tamil hindi devotional songs.Listen to Tamil Amuthu Bakthi Radio station online.\"",
         "image":  "images/tamilamuthubhakthi.jpg"
-    },
-    {
-        "title":  "CMR Tamil HD Radio",
-        "streamUrl":  "https://live.cmr24.net/CMR/TamilHD-HQ/icecast.audio",
-        "description":  "CMR Tamil HD is an online radio station from Ontario (Canada).CMR represents the growing ethnic voice.CMR Tamil HD radio has news",
-        "image":  "images/tamilhdradio.jpg"
-    },
+    },   
     {
         "title":  "AR Rahman",
         "streamUrl":  "https://stream.zeno.fm/3z615n343d0uv",
@@ -214,79 +274,7 @@
         "streamUrl":  "https://stream.rcs.revma.com/pcr8x50uty8uv",
         "description":  "Thasbeeh Radio Islam radio station online from Sri lanka.Listen To Tamil Bayan",
         "image":  "images/thasbeehradio.jpg"
-    },
-    {
-        "title":  "American Tamil Radio",
-        "streamUrl":  "https://cp11.serverse.com/proxy/hgsmgluv?mp=/stream",
-        "description":  "“அமெரிக்கத் தமிழ் ஊடகத்தின்” ஒரு அங்கமான அமெரிக்கத் தமிழ் வானொலி",
-        "image":  "images/atr.jpg"
-    },
-    {
-        "title":  "Erode City FM",
-        "streamUrl":  "https://stream.zeno.fm/9fp1383f0d0uv",
-        "description":  "Erode City FM is a Tamil online radio station broadcasting from Erode. It plays All Time Good Tamil Songs 24/7 live online.Tune to the best of Tamil music radio.Listen to Erode City FM Tamil radio station online.\"",
-        "image":  "images/erode.jpg"
-    },
-    {
-        "title":  "Old Hits",
-        "streamUrl":  "https://a9oldhits-a9media.radioca.st/stream",
-        "description":  "Old Hits Tamil radio is part of A9 media.It plays the Tamil movie songs from old movies.Listen to Tamil super hits classical songs.Listen to Tamil Old Hits only on Old Hits radio station online.\"",
-        "image":  "images/a9logos.jpg"
-    },
-    {
-        "title":  "Sun Tamil Radio",
-        "streamUrl":  "https://stream.zenolive.com/yavek61461zuv.aac",
-        "description":  "Sun Tamil Radio is a Tamil radio station broadcasting from Sri Lnaka.Listen to layest kollywood Tamil super hits songs live streaming online \"",
-        "image":  "images/suntamilradio.jpg"
-    },
-    {
-        "title":  "Tamil Amuthu Chennai Radio",
-        "streamUrl":  "https://stream.zeno.fm/k9e5pmbktp8uv",
-        "description":  "Tamil Amuthu Chennai Radio covers various kinds of hits and all set to engage you with this exciting and engaging radio station that is available to enjoy for everyone around the world and the radio is also online 24/7. So, if you like Tamil Amuthu Chennai radio hit the play button and enjoy the music of your choice with the radio.Listen to Tamil Amuthu Chennai Radio station online.,இணையத்தில் முதலிடம்…. உங்கள் இதயத்திலும் முதலிடம்…. இது உங்கள் தமிழ் அமுது சென்னை வானொலி… இசையால் உலக தமிழர்களை ஈர்த்து கொண்டிருப்பது உங்கள் தமிழ் அமுது சென்னை வானொலி…. தொடர்ந்தும் இணையத்தின் ஊடாக.",
-        "image":  "images/Tamil-Amuthu-Chennai-Radio.jpg"
-    },
-    {
-        "title":  "SLBC Tamil National Service",
-        "streamUrl":  "https://stream.zeno.fm/xekhrn4zetzuv",
-        "description":  "SLBC Tamil National Service is the Tamil service of Sri Lanka Broadcasting Corporation in Sri Lanka. SLBC Tamil National Service radio plays Tamil news , Tamil songs and music.Listen to SLBC tamil radio station online. இலங்கை வானொலி இலங்கையின் முன்னணி ஒலிபரப்பு நிலையமும் ஆசியாவின் முதல் வானொலி நிலையமுமாகும். இலங்கை ஒலிபரப்புக் கூட்டுத்தாபனம்",
-        "image":  "images/slbctamil.jpg"
-    },
-    {
-        "title":  "Roobam FM",
-        "streamUrl":  "https://s3.radio.co/sadfae7495/listen",
-        "description":  "Roobam FM is Toronto Digital Tamil radio from Canada.Roobam FM plays super hit Tamil songs and local news from Canada , sri Lanka and India.Listen to Roobam FM Tamil digital online radio station from Canada.",
-        "image":  "images/roobamfm.jpg"
-    },
-    {
-        "title":  "Asal FM",
-        "streamUrl":  "https://stream.zeno.fm/pzgws1kc41zuv",
-        "description":  "Asal FM radio plays Tamil and South Indian cinema music.Listen to Asal FM radio online.Asal FM radio plays super hit Tamil songs from alla eras. இசை பிரியர்களே!! தங்களுடைய இசைப்பயணம் இனிமையாக தொடர அசல் இசை.",
-        "image":  "images/asalfm.jpg"
-    },
-    {
-        "title":  "Nellai Tamil FM",
-        "streamUrl":  "https://stream.zeno.fm/5nu139840tzuv",
-        "description":  "Nellai Tamil FM is a Tamil online radio station broadcasting from Tirunelveli .Nellai Fm plays tamil classic songs and melody songs online.Listen to Nellai Tamil FM radio station online. நெல்லை தமிழ் வானொலி உங்களுக்காக இனிமையான பாடல்களை தொகுத்து வழங்க இருக்கிறோம். சிறந்த ஒலி அமைப்புடன் உங்களுடன் இனைகிறோம்.",
-        "image":  "images/nellai-tamil-fm.jpg"
-    },
-    {
-        "title":  "Chellam FM",
-        "streamUrl":  "https://sugu.radioca.st/stream/stream/1",
-        "description":  "Chellam FM listen non-stop super hits Tamil songs 27/7.Chellam FM playlist contains a huge selection of Tamil super hits songs from the 80’s and 90’s.Chellam FM is also available on HQ.Listen to Chellam FM live streaming online.",
-        "image":  "images/chellamfm.jpg"
-    },
-    {
-        "title":  "Anbu FM",
-        "streamUrl":  "https://stream.zeno.fm/c2p4f1np4bruv",
-        "description":  "Anbu FM is Tamil online radio station broadcasting from Tiruppur.Anbu FM plays non stop Tamil super hit songs from Tamil movies.Listen to Anbu FM Tamil station online. உலக தமிழர்களின் உள்ளங்களிளும் இல்லங்களிளும் அன்பா ஒலிக்கும்…",
-        "image":  "images/anbufm.jpg"
-    },
-    {
-        "title":  "Lankasri FM",
-        "streamUrl":  "https://rbx2.hnux.com/http://5984.cloudrad.io:8032/stream.mp3",
-        "description":  "Lankasri FM is your favorite Tamil FM Online from UK, Lankasri FM Radio Live Entertain people all over the world with Creative Tamil Programs and Tamil songs and music.Listen to Lankasri FM tamil radio online",
-        "image":  "images/lankasrifm.jpg"
-    },
+    },    
     {
         "title":  "KS Chitra Radio",
         "streamUrl":  "https://stream.zeno.fm/aad4e51qz7zuv",
