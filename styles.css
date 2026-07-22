@@ -258,6 +258,47 @@ h2 {
   margin-bottom: 22px;
 }
 
+.monetization-section {
+  margin-top: 28px;
+  padding: 34px;
+  border: 1px solid var(--line);
+  border-radius: 32px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.monetization-actions {
+  margin-top: 24px;
+}
+
+.adsense-placeholder {
+  margin-top: 16px;
+  padding: 18px 20px;
+  border: 1px dashed rgba(182, 70, 31, 0.35);
+  border-radius: 20px;
+  background: rgba(255, 248, 241, 0.9);
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.adsense-placeholder p {
+  margin: 0;
+}
+
+.section-heading-with-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.clear-favorites-btn {
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  border-radius: 999px;
+}
+
 .language-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -487,6 +528,11 @@ h2 {
   font-size: 0.95rem;
   text-decoration: none;
   cursor: pointer;
+}
+
+.player-ad-slot {
+  margin-top: 18px;
+  text-align: left;
 }
 
 .share-link-button {

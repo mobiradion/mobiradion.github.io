@@ -8,29 +8,48 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6870612281681959"
+     crossorigin="anonymous"></script>
 </head>
 <body data-page="kannada">
   <div class="page-shell">
     <div data-include="header"></div>
     <main class="inner-main">
-      <section class="page-hero">
-        <p class="eyebrow">Kannada Radio</p>
-        <h1>Kannada radio categories presented in a clean and modern browsing experience.</h1>
-        <p class="hero-text">This page can organize curated station picks, live audio collections, and category blocks for Kannada-speaking audiences.</p>
-      </section>
-      <section class="content-grid">
-        <article class="info-panel">
-          <h2>Use cases</h2>
-          <p>Showcase top city stations, editor picks, special broadcasts, and genre-based radio groupings.</p>
-        </article>
-        <article class="info-panel">
-          <h2>Consistent layout</h2>
-          <p>The same responsive header and footer remain visible across pages, helping visitors move quickly between languages.</p>
-        </article>
+      <section class="station-section">
+        <div class="section-heading">
+          <h2>Kannada Stations</h2>
+        </div>
+        <div class="search-bar-wrap">
+          <label class="sr-only" for="radio-search">Search Kannada radios</label>
+          <input
+            id="radio-search"
+            class="radio-search"
+            type="search"
+            placeholder="Search Kannada radios..."
+            autocomplete="off"
+          >
+        </div>
+        <div id="radio-list" class="radio-grid">
+          <p class="loading-state">Loading Kannada radio stations...</p>
+        </div>
+        <div class="adsense-placeholder">
+          <p>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6870612281681959"
+              crossorigin="anonymous"></script>
+            <!-- radiostar.in -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6870612281681959" data-ad-slot="8202292755"
+              data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </p>
+        </div>
       </section>
     </main>
     <div data-include="footer"></div>
   </div>
   <script src="shared.js"></script>
+  <script src="kannada-data.js"></script>
+  <script src="language-page.js"></script>
 </body>
 </html>

@@ -8,29 +8,48 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6870612281681959"
+     crossorigin="anonymous"></script>
 </head>
 <body data-page="marathi">
   <div class="page-shell">
     <div data-include="header"></div>
     <main class="inner-main">
-      <section class="page-hero">
-        <p class="eyebrow">Marathi Radio</p>
-        <h1>Marathi station discovery with space for local favorites and special programs.</h1>
-        <p class="hero-text">This multipage structure makes it easy to spotlight regional content while keeping navigation familiar across the site.</p>
-      </section>
-      <section class="content-grid">
-        <article class="info-panel">
-          <h2>Content blocks</h2>
-          <p>Add city channels, festive programming, news stations, and music-led experiences in a simple visual grid.</p>
-        </article>
-        <article class="info-panel">
-          <h2>Easy maintenance</h2>
-          <p>The common header and footer live in one shared script, so future menu changes stay quick and consistent.</p>
-        </article>
+      <section class="station-section">
+        <div class="section-heading">
+          <h2>Marathi Stations</h2>
+        </div>
+        <div class="search-bar-wrap">
+          <label class="sr-only" for="radio-search">Search Marathi radios</label>
+          <input
+            id="radio-search"
+            class="radio-search"
+            type="search"
+            placeholder="Search Marathi radios..."
+            autocomplete="off"
+          >
+        </div>
+        <div id="radio-list" class="radio-grid">
+          <p class="loading-state">Loading Marathi radio stations...</p>
+        </div>
+        <div class="adsense-placeholder">
+          <p>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6870612281681959"
+              crossorigin="anonymous"></script>
+            <!-- radiostar.in -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6870612281681959" data-ad-slot="8202292755"
+              data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </p>
+        </div>
       </section>
     </main>
     <div data-include="footer"></div>
   </div>
   <script src="shared.js"></script>
+  <script src="marathi-data.js"></script>
+  <script src="language-page.js"></script>
 </body>
 </html>

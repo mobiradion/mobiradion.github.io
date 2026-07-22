@@ -8,29 +8,48 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6870612281681959"
+     crossorigin="anonymous"></script>
 </head>
 <body data-page="hindi">
   <div class="page-shell">
     <div data-include="header"></div>
     <main class="inner-main">
-      <section class="page-hero">
-        <p class="eyebrow">Hindi Radio</p>
-        <h1>Hindi listening made simple across entertainment, news, and culture.</h1>
-        <p class="hero-text">Use this page as a focused home for Hindi station collections, current shows, and top streaming categories.</p>
-      </section>
-      <section class="content-grid">
-        <article class="info-panel">
-          <h2>Featured content</h2>
-          <p>Bollywood music blocks, talk radio, youth-oriented stations, and daily news capsules can all sit neatly in this layout.</p>
-        </article>
-        <article class="info-panel">
-          <h2>Built for mobile</h2>
-          <p>Spacing, cards, and navigation all collapse naturally on smaller screens without losing readability.</p>
-        </article>
+      <section class="station-section">
+        <div class="section-heading">
+          <h2>Hindi Stations</h2>
+        </div>
+        <div class="search-bar-wrap">
+          <label class="sr-only" for="radio-search">Search Hindi radios</label>
+          <input
+            id="radio-search"
+            class="radio-search"
+            type="search"
+            placeholder="Search Hindi radios..."
+            autocomplete="off"
+          >
+        </div>
+        <div id="radio-list" class="radio-grid">
+          <p class="loading-state">Loading Hindi radio stations...</p>
+        </div>
+        <div class="adsense-placeholder">
+          <p>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6870612281681959"
+              crossorigin="anonymous"></script>
+            <!-- radiostar.in -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6870612281681959" data-ad-slot="8202292755"
+              data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </p>
+        </div>
       </section>
     </main>
     <div data-include="footer"></div>
   </div>
   <script src="shared.js"></script>
+  <script src="hindi-data.js"></script>
+  <script src="language-page.js"></script>
 </body>
 </html>
