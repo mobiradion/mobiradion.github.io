@@ -1,5 +1,5 @@
 window.HINDI_RADIOS = [
-  {
+    {
     "title": "Mirchi Love",
     "streamUrl": "https://drive.uber.radio/uber/bollywoodlove/icecast.audio",
     "description": "Mirchi Love 104.2 FM, India’s first Love song station is here. Just Pyar Kiye ja! Mirchi Love radio station that plays you the best bollywood romantic hits 24/7. From Rajesh Khanna to Ranbir Kapoor, from Sharmila Tagore to Deepika, from Kishore to Arijit and Asha to Shreya on Mirchi Love, you will get to hear love songs from the 60s to 2016s. So tune in and get your ‘mush’ fix today. We guarantee once you fall in Mirchi love, you won’t be able to fall out. Mirchi Love ka hai vaada, yaha hai ads kam aur gaane zyada!\nListen to Mirchi love radio Hindi only on Liveradios.in",
@@ -123,7 +123,7 @@ window.HINDI_RADIOS = [
     "title": "Radio Sharda",
     "streamUrl": "https://stream.zeno.fm/24fwxb105eeuv",
     "description": "Radio Sharda 90.4 FM is based in Jammu City, in the Indian state of Jammu and Kashmir, this is a community radio station that broadcasts in Kashmiri and Hindustani. It is the 1st First Kashmiri Community Radio.A Community Radio For Displaced People of KASHMIR.Listen to Radio Sharda 90.4 FM online.",
-    "image": "images/radio-sharda.png"
+    "image": "images/Radio-Sharda-FM.png"
   },
   {
     "title": "Marwar Radio",
@@ -153,24 +153,24 @@ window.HINDI_RADIOS = [
     "title": "AKS Radio",
     "streamUrl": "https://servidor40-3.brlogic.com:7232/live",
     "description": "AKS Radio 90.4 FM is a community radio station based in Satna (M.P). This is the FIRST FM RADIO STATION in our city.Our station has a broadcasting range of over 30kms radius from Satna Along with providing uninterrupted quality music, we broadcast content that is popular and relevant to a local, specific audience including educational programs on agriculture, healthcare, women, etc. with listeners in both households and workplaces around the district.Listen to AKS Radio 90.4 FM radio station online.",
-    "image": "images/aksradio.jpg"
+    "image": "images/aksradio904-1.jpg"
   },
   {
     "title": "Big FM 106.2",
     "streamUrl": "https://funasia.streamguys1.com/live4",
     "description": "BIG 106.2, is a South Asian radio station playing Pure Music all day long. At the studios of BIG 106.2, we use the magic of radio to entertain our listeners and and spread happiness.Listen to Big FM radio station online playing bollywood songs and interviews.Big FM 106.2 live online only on Liveradios.in",
-    "image": "images/bignew1.jpg"
+    "image": "images/bignew1-1.jpg"
   },
   {
     "title": "Radio Olive Retro",
     "streamUrl": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_OLIVE_RETRO_S03_SC",
     "description": "Radio Olive Retro is the first ever Hindi retro radio station, Radio Olive Retro launches in the State of Qatar. The channel purely focuses on infotainment.Listen to Radio olive retro on liveradios.in",
-    "image": "images/RADIO-OLIVE-RETRO.png"
+    "image": "images/olive.jpg"
   },
    {
     "title": "Bolly 102.9 FM",
     "streamUrl": "https://ice6.securenetsystems.net/INTRADIO?type=.mp3",
-    "description": "Bolly 102.9 FM is the FIRST 24×7 Indian FM Radio Station ! in Washington D.C. Metro area  Bolly 102.9 FM is the true voice of South Asians living in the DMV (District,Maryland and Virginia) and reaches to more than 400,000 listeners who rely on Bolly 102.9 as the only entertainment medium that plays current Bollywood hits, Top 20, 90s Music, Bollywood Dance numbers along with music in Telugu, Tamil and Malayalam with original Local Programming..Bolly 102.9 FM most popular shows are – Morning DC with RJ Snehal, Request Hours with Priyanka, Rock on with Rohit, Masti hours with Priyanka and Bolly Flashback with RJ Aryan.Listen to Bolly 102.9 FM Hindi radio station online.",
+    "description": "Bolly 102.9 FM is the FIRST 24×7 Indian FM Radio Station ! in Washington D.C. Metro area  Bolly 102.9 FM is the true voice of South Asians living in the DMV (District,Maryland and Virginia) and reaches to more than 400,000 listeners who rely on Bolly 102.9 as the only entertainment medium that plays current Bollywood hits, Top 20, 90s Music, Bollywood Dance numbers along with music in Telugu, Hindi and Malayalam with original Local Programming..Bolly 102.9 FM most popular shows are – Morning DC with RJ Snehal, Request Hours with Priyanka, Rock on with Rohit, Masti hours with Priyanka and Bolly Flashback with RJ Aryan.Listen to Bolly 102.9 FM Hindi radio station online.",
     "image": "images/bollyradio.jpg"
   }
 ];
