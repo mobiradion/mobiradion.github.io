@@ -123,7 +123,7 @@ window.HINDI_RADIOS = [
     "title": "Radio Sharda",
     "streamUrl": "https://stream.zeno.fm/24fwxb105eeuv",
     "description": "Radio Sharda 90.4 FM is based in Jammu City, in the Indian state of Jammu and Kashmir, this is a community radio station that broadcasts in Kashmiri and Hindustani. It is the 1st First Kashmiri Community Radio.A Community Radio For Displaced People of KASHMIR.Listen to Radio Sharda 90.4 FM online.",
-    "image": "images/Radio-Sharda-FM.png"
+    "image": "images/Radio-Sharda-FM.PNG"
   },
   {
     "title": "Marwar Radio",
