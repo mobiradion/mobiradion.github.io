@@ -1,19 +1,19 @@
 const primaryNavItems = [
-  { id: "tamil", label: "Tamil", href: "tamil.html" },
-  { id: "hindi", label: "Hindi", href: "hindi.html" },
-  { id: "telugu", label: "Telugu", href: "telugu.html" },
-  { id: "kannada", label: "Kannada", href: "kannada.html" },
-  { id: "malayalam", label: "Malayalam", href: "malayalam.html" },
-  { id: "marathi", label: "Marathi", href: "marathi.html" },
-  { id: "punjabi", label: "Punjabi", href: "punjabi.html" },
-  { id: "air", label: "AIR", href: "air.html" },
-  { id: "favorites", label: "Favorites", href: "favorites.html" }
+  { id: "tamil", label: "Tamil", href: "/tamil.html" },
+  { id: "hindi", label: "Hindi", href: "/hindi.html" },
+  { id: "telugu", label: "Telugu", href: "/telugu.html" },
+  { id: "kannada", label: "Kannada", href: "/kannada.html" },
+  { id: "malayalam", label: "Malayalam", href: "/malayalam.html" },
+  { id: "marathi", label: "Marathi", href: "/marathi.html" },
+  { id: "punjabi", label: "Punjabi", href: "/punjabi.html" },
+  { id: "air", label: "AIR", href: "/air.html" },
+  { id: "favorites", label: "Favorites", href: "/favorites.html" }
 ];
 
 const footerNavItems = [
-  { id: "submit-radio", label: "Submit Radio", href: "submit-radio.html" },
-  { id: "contact-us", label: "Contact US", href: "contact-us.html" },
-  { id: "privacy-policy", label: "Privacy Policy", href: "privacy-policy.html" }
+  { id: "submit-radio", label: "Submit Radio", href: "/submit-radio.html" },
+  { id: "contact-us", label: "Contact US", href: "/contact-us.html" },
+  { id: "privacy-policy", label: "Privacy Policy", href: "/privacy-policy.html" }
 ];
 
 const currentPage = document.body.dataset.page || "home";
@@ -29,8 +29,8 @@ const renderNavLinks = (items) =>
 const headerMarkup = `
   <header class="site-header">
     <div class="brand-row">
-      <a class="brand" href="index.html" aria-label="Radio Star home">
-        <img class="brand-logo" src="images/radio-star-logo.svg" alt="Radio Star logo">
+      <a class="brand" href="/index.html" aria-label="Radio Star home">
+        <img class="brand-logo" src="/images/radio-star-logo.svg" alt="Radio Star logo">
         <span class="brand-text">Radio Star</span>
       </a>
       <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">

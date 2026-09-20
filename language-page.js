@@ -35,13 +35,17 @@ if (pageConfig) {
           const streamUrl = row.streamUrl || row.url || row.streamurl || row.stream_url || row.stream || row.link || "";
           const description = row.description || row.desc || row.details || "Live radio stream";
           const image = row.image || row.img || row.thumbnail || "";
+          const slug = row.slug || "";
+          const pageUrl = row.pageUrl || `/${pageKey}/${slug}.html`;
 
           return {
             originalIndex: index,
             title,
             streamUrl,
             description,
-            image
+            image,
+            slug,
+            pageUrl
           };
         })
       : [];
@@ -60,36 +64,19 @@ if (pageConfig) {
       .map(
         (station) => `
           <article class="radio-card">
-            <button
-              type="button"
+            <a
               class="radio-trigger"
-              data-index="${station.originalIndex}"
-              data-stream-url="${escapeAttribute(station.streamUrl)}"
-              data-title="${escapeAttribute(station.title)}"
-              data-description="${escapeAttribute(station.description)}"
+              href="${escapeAttribute(station.pageUrl)}"
             >
               <img class="radio-image" src="${escapeAttribute(station.image)}" alt="${escapeAttribute(station.title)}" loading="lazy">
               <div class="radio-copy">
                 <h3>${escapeAttribute(station.title)}</h3>
               </div>
-            </button>
+            </a>
           </article>
         `
       )
       .join("");
-  };
-
-  const openStationPage = (station) => {
-    const params = new URLSearchParams({
-      index: String(station.index),
-      title: station.title,
-      streamUrl: station.streamUrl,
-      description: station.description || "Live radio stream",
-      image: station.image || "",
-      language: pageConfig.label
-    });
-
-    window.location.href = `radio-player.html?${params.toString()}`;
   };
 
   const loadStations = () => {
@@ -111,9 +98,6 @@ if (pageConfig) {
 
     renderStations(stations);
 
-    radioList.removeEventListener("click", handleCardClick);
-    radioList.addEventListener("click", handleCardClick);
-
     if (radioSearch) {
       radioSearch.addEventListener("input", () => {
         const query = radioSearch.value.trim().toLowerCase();
@@ -123,21 +107,6 @@ if (pageConfig) {
         renderStations(filteredStations);
       });
     }
-  };
-
-  const handleCardClick = (event) => {
-    const trigger = event.target.closest(".radio-trigger");
-    if (!trigger) {
-      return;
-    }
-
-    openStationPage({
-      index: trigger.dataset.index,
-      streamUrl: trigger.dataset.streamUrl,
-      title: trigger.dataset.title,
-      description: trigger.dataset.description,
-      image: trigger.querySelector(".radio-image")?.getAttribute("src") || ""
-    });
   };
 
   loadStations();

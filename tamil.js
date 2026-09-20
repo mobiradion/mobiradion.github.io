@@ -14,36 +14,19 @@ function renderStations(stations) {
     .map(
       (station) => `
         <article class="radio-card">
-          <button
-            type="button"
+          <a
             class="radio-trigger"
-            data-index="${station.originalIndex}"
-            data-stream-url="${station.streamUrl}"
-            data-title="${station.title.replace(/"/g, "&quot;")}"
-            data-description="${station.description.replace(/"/g, "&quot;")}"
+            href="${station.pageUrl || `/tamil/${station.slug || ''}.html`}"
           >
-            <img class="radio-image" src="${station.image}" alt="${station.title}" loading="lazy">
+            <img class="radio-image" src="${station.image}" alt="${station.title.replace(/"/g, "&quot;")}" loading="lazy">
             <div class="radio-copy">
               <h3>${station.title}</h3>
             </div>
-          </button>
+          </a>
         </article>
       `
     )
     .join("");
-}
-
-function openStationPage(station) {
-  const params = new URLSearchParams({
-    index: String(station.index),
-    title: station.title,
-    streamUrl: station.streamUrl,
-    description: station.description || "Live Tamil radio stream",
-    image: station.image || "",
-    language: "Tamil"
-  });
-
-  window.location.href = `radio-player.html?${params.toString()}`;
 }
 
 function loadStations() {
@@ -58,29 +41,16 @@ function loadStations() {
 
   renderStations(stations);
 
-  radioList.addEventListener("click", (event) => {
-    const trigger = event.target.closest(".radio-trigger");
-    if (!trigger) {
-      return;
-    }
+  if (radioSearch) {
+    radioSearch.addEventListener("input", () => {
+      const query = radioSearch.value.trim().toLowerCase();
+      const filteredStations = stations.filter((station) =>
+        station.title.toLowerCase().includes(query)
+      );
 
-    openStationPage({
-      index: trigger.dataset.index,
-      streamUrl: trigger.dataset.streamUrl,
-      title: trigger.dataset.title,
-      description: trigger.dataset.description,
-      image: trigger.querySelector(".radio-image")?.getAttribute("src") || ""
+      renderStations(filteredStations);
     });
-  });
-
-  radioSearch.addEventListener("input", () => {
-    const query = radioSearch.value.trim().toLowerCase();
-    const filteredStations = stations.filter((station) =>
-      station.title.toLowerCase().includes(query)
-    );
-
-    renderStations(filteredStations);
-  });
+  }
 }
 
 loadStations();

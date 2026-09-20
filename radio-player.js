@@ -51,6 +51,107 @@ const shareFacebook = document.getElementById("share-facebook");
 const shareTelegram = document.getElementById("share-telegram");
 const copyShareLinkButton = document.getElementById("copy-share-link");
 let lastStreamUrl = "";
+let hlsInstance = null;
+
+function destroyHls() {
+  if (hlsInstance) {
+    hlsInstance.destroy();
+    hlsInstance = null;
+  }
+}
+
+function isHlsStream(url) {
+  if (!url) {
+    return false;
+  }
+  return /\.m3u8($|\?)/i.test(url);
+}
+
+function playStream(streamUrl) {
+  destroyHls();
+
+  if (!playerNode) {
+    return;
+  }
+
+  if (!streamUrl) {
+    playerNode.removeAttribute("src");
+    if (descriptionNode) {
+      descriptionNode.textContent = "This station is missing a valid stream URL.";
+    }
+    updatePlaybackIcon();
+    return;
+  }
+
+  lastStreamUrl = streamUrl;
+
+  if (isHlsStream(streamUrl)) {
+    if (window.Hls && window.Hls.isSupported()) {
+      hlsInstance = new window.Hls({
+        enableWorker: true,
+        lowLatencyMode: true
+      });
+
+      hlsInstance.loadSource(streamUrl);
+      hlsInstance.attachMedia(playerNode);
+
+      hlsInstance.on(window.Hls.Events.MANIFEST_PARSED, () => {
+        playerNode.play().catch(() => {
+          if (descriptionNode) {
+            descriptionNode.textContent = "The stream is unavailable right now. Please try another station.";
+          }
+          updatePlaybackIcon();
+        });
+      });
+
+      hlsInstance.on(window.Hls.Events.ERROR, (event, data) => {
+        if (data.fatal) {
+          switch (data.type) {
+            case window.Hls.ErrorTypes.NETWORK_ERROR:
+              console.warn("HLS network error, trying to recover...", data);
+              hlsInstance.startLoad();
+              break;
+            case window.Hls.ErrorTypes.MEDIA_ERROR:
+              console.warn("HLS media error, trying to recover...", data);
+              hlsInstance.recoverMediaError();
+              break;
+            default:
+              console.error("Fatal HLS error:", data);
+              destroyHls();
+              if (descriptionNode) {
+                descriptionNode.textContent = "This station could not be played. The stream may be temporarily unavailable.";
+              }
+              updatePlaybackIcon();
+              break;
+          }
+        }
+      });
+    } else if (playerNode.canPlayType("application/vnd.apple.mpegurl")) {
+      playerNode.src = streamUrl;
+      playerNode.load();
+      playerNode.play().catch(() => {
+        if (descriptionNode) {
+          descriptionNode.textContent = "The stream is unavailable right now. Please try another station.";
+        }
+        updatePlaybackIcon();
+      });
+    } else {
+      if (descriptionNode) {
+        descriptionNode.textContent = "HLS streaming is not supported on this browser.";
+      }
+      updatePlaybackIcon();
+    }
+  } else {
+    playerNode.src = streamUrl;
+    playerNode.load();
+    playerNode.play().catch(() => {
+      if (descriptionNode) {
+        descriptionNode.textContent = "The stream is unavailable right now. Please try another station.";
+      }
+      updatePlaybackIcon();
+    });
+  }
+}
 
 function safeAddEventListener(element, eventName, handler) {
   if (element) {
@@ -88,28 +189,16 @@ function updateStationDetails(station) {
   if (breadcrumbCurrent) {
     breadcrumbCurrent.textContent = station.title;
   }
+  const titleNode = document.getElementById("station-title");
+  if (titleNode) {
+    titleNode.textContent = station.title;
+  }
   if (imageNode) {
     imageNode.src = station.image || "";
     imageNode.alt = station.title;
   }
 
-  if (playerNode) {
-    if (station.streamUrl) {
-      lastStreamUrl = station.streamUrl;
-      playerNode.src = station.streamUrl;
-      playerNode.load();
-      playerNode.play().catch(() => {
-        if (descriptionNode) {
-          descriptionNode.textContent = "The stream is unavailable right now. Please try another station.";
-        }
-      });
-    } else {
-      playerNode.removeAttribute("src");
-      if (descriptionNode) {
-        descriptionNode.textContent = "This station is missing a valid stream URL.";
-      }
-    }
-  }
+  playStream(station.streamUrl);
 
   updatePlaybackIcon();
   updateFavoriteIcon(station);
@@ -141,6 +230,11 @@ function goToStation(index) {
     return;
   }
 
+  if (station.pageUrl) {
+    window.location.href = station.pageUrl;
+    return;
+  }
+
   stationIndex = index;
 
   const nextParams = new URLSearchParams({
@@ -156,6 +250,10 @@ function goToStation(index) {
 }
 
 function buildStationUrl(station) {
+  if (station && station.pageUrl) {
+    return `${window.location.origin}${station.pageUrl}`;
+  }
+
   const shareParams = new URLSearchParams({
     index: String(station.index ?? -1),
     title: station.title,
@@ -214,7 +312,7 @@ safeAddEventListener(nextButton, "click", () => {
 });
 
 safeAddEventListener(playbackButton, "click", () => {
-  if (!playerNode || !playerNode.src) {
+  if (!playerNode || (!playerNode.src && !playerNode.currentSrc && !hlsInstance)) {
     return;
   }
 
@@ -289,6 +387,9 @@ document.addEventListener("click", (event) => {
 safeAddEventListener(playerNode, "play", updatePlaybackIcon);
 safeAddEventListener(playerNode, "pause", updatePlaybackIcon);
 safeAddEventListener(playerNode, "error", () => {
+  if (hlsInstance) {
+    return;
+  }
   if (descriptionNode) {
     descriptionNode.textContent = "This station could not be played. The stream may be temporarily unavailable.";
   }
