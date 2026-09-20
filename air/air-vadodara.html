@@ -70,7 +70,11 @@
                 <span aria-hidden="true">&#9654;&#9654;</span>
               </a>
               <button id="toggle-favorite" class="icon-btn" type="button" aria-label="Add to favorites">
-                <span id="favorite-icon" aria-hidden="true">&#9825;</span>
+                <span id="favorite-icon" class="favorite-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                </span>
               </button>
               <button id="share-station" class="icon-btn" type="button" aria-label="Share station" aria-expanded="false" aria-controls="share-menu">
                 <span class="share-icon" aria-hidden="true">
@@ -89,6 +93,29 @@
             <button id="copy-share-link" class="share-link share-link-button" type="button">Copy Link</button>
           </div>
           <p id="station-description" class="hero-text player-station-description">Listen to AIR Vadodara live streaming online in high quality on Radio Star. Free AIR radio stations 24/7.</p>
+          
+          <div class="app-download-card">
+            <div class="app-download-content">
+              <span class="app-download-badge">Official App</span>
+              <p class="app-download-text">Download the app from Play Store for seamless listening</p>
+            </div>
+            <a class="playstore-btn"
+               href="https://play.google.com/store/apps/details?id=com.tamilradios.fm"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Download app from Google Play Store">
+              <svg class="playstore-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="#4285F4" d="M3.6 1.8c-.3.3-.5.8-.5 1.4v17.6c0 .6.2 1.1.5 1.4l.1.1 9.9-9.9v-.2L3.7 1.7l-.1.1z"/>
+                <path fill="#FFBB00" d="M16.9 15.6l-3.3-3.3v-.2l3.3-3.3.1.1 3.9 2.2c1.1.6 1.1 1.6 0 2.2l-3.9 2.2-.1.1z"/>
+                <path fill="#EA4335" d="M13.6 12.1L3.6 22.1c.4.4 1 .5 1.7.1l11.6-6.6-3.3-3.5z"/>
+                <path fill="#34A853" d="M13.6 11.9l3.3-3.5L5.3 1.8c-.7-.4-1.3-.3-1.7.1l10 10z"/>
+              </svg>
+              <div class="playstore-btn-text">
+                <span class="playstore-btn-small">GET IT ON</span>
+                <span class="playstore-btn-brand">Google Play</span>
+              </div>
+            </a>
+          </div>
           
           <div class="ad-slot-container" style="margin-top: 24px; text-align: center;">
             <!-- radiostar.in -->

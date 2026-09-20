@@ -175,9 +175,6 @@ function updateFavoriteIcon(station) {
   }
 
   const favorite = isFavoriteStation(station.streamUrl);
-  if (favoriteIcon) {
-    favoriteIcon.innerHTML = favorite ? "&#9829;" : "&#9825;";
-  }
   favoriteButton.classList.toggle("icon-btn-active", favorite);
   favoriteButton.setAttribute("aria-label", favorite ? "Remove from favorites" : "Add to favorites");
 }
@@ -337,9 +334,6 @@ safeAddEventListener(favoriteButton, "click", () => {
     language: currentStation.language || "Tamil"
   });
 
-  if (favoriteIcon) {
-    favoriteIcon.innerHTML = nextFavoriteState ? "&#9829;" : "&#9825;";
-  }
   favoriteButton.classList.toggle("icon-btn-active", nextFavoriteState);
   favoriteButton.setAttribute("aria-label", nextFavoriteState ? "Remove from favorites" : "Add to favorites");
 });

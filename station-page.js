@@ -57,9 +57,6 @@
       return;
     }
     const favorite = isFavoriteStation(stationData.streamUrl);
-    if (favoriteIcon) {
-      favoriteIcon.innerHTML = favorite ? "&#9829;" : "&#9825;";
-    }
     favoriteButton.classList.toggle("icon-btn-active", favorite);
     favoriteButton.setAttribute("aria-label", favorite ? "Remove from favorites" : "Add to favorites");
   }
@@ -182,9 +179,6 @@
         language: stationData.language,
         pageUrl: window.location.pathname
       });
-      if (favoriteIcon) {
-        favoriteIcon.innerHTML = nextState ? "&#9829;" : "&#9825;";
-      }
       favoriteButton.classList.toggle("icon-btn-active", nextState);
       favoriteButton.setAttribute("aria-label", nextState ? "Remove from favorites" : "Add to favorites");
     });
